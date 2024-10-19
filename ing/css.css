@@ -1,0 +1,81 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('/ing/37299159-6e24-44d1-a570-4c975f8bb7ce.jpg');
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 229, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 90%;
+
+    max-width: 400px;
+
+}
+
+.birthday {
+    width: 100%;
+
+    max-width: 200px;
+
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.play-btn {
+    background-color: #f6f6f6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.play-btn:hover {
+    background-color: #e67e22;
+}
+
+.playing {
+    animation: none;
+}
